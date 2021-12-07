@@ -1,0 +1,80 @@
+\documentclass[8pt,twocolumn]{ctexart}
+\usepackage{amssymb}
+\usepackage{bm}
+\usepackage{textcomp} %命令\textacutedbl的包,二阶导符号
+
+% Page length commands go here in the preamble
+\setlength{\oddsidemargin}{-0.25in} % Left margin of 1 in + 0 in = 1 in
+\setlength{\textwidth}{9in}   % 纸张宽度Right margin of 8.5 in - 1 in - 6.5 in = 1 in
+\setlength{\topmargin}{-.75in}  % Top margin of 2 in -0.75 in = 1 in
+\setlength{\textheight}{9.2in}  % Lower margin of 11 in - 9 in - 1 in = 1 in
+\setlength{\parindent}{0in}
+
+
+\makeatletter
+\newif\if@restonecol
+\makeatother
+\let\algorithm\relax
+\let\endalgorithm\relax
+\usepackage[linesnumbered,ruled,vlined]{algorithm2e}%[ruled,vlined]{
+\usepackage{algpseudocode}
+\renewcommand{\algorithmicrequire}{\textbf{Input:}} 
+\renewcommand{\algorithmicensure}{\textbf{Output:}} 
+	
+\begin{document}
+	
+	\begin{algorithm}
+		\caption{component matrices computing}
+		\LinesNumbered
+		\KwIn{$\mathcal{X}\in\mathbb{R}^{l_1\times l_2\times\cdots\times l_N},\varepsilon,\lambda,\delta,R$}
+		\KwOut{$A^{(j)}s$ for $j=1$ to $N$}
+		\textbf{Initialize} all $A^{(j)}s$ //which can be seen as the $0^{th}$ round iterations\;
+		
+		{$l$\hspace*{-1pt}\textacutedbl}$=L$ //if we need to judge whether $(11)$ is true then {$l$\hspace*{-1pt}\textacutedbl} denotes $L|_{t-1}$\;
+		
+		\For{ each $A_{i_jr}^{<!-- -->{j}}(1\le j\le N,1\le i_j\le I_j,1\le r\le R)$ }
+		{//$1^{st}$ round iterations\;
+			$g_{i_jr}^{(j)'}=g_{i_jr}^{(j)}$\;
+			$A_{i_jr}^{(j)'}=A_{i_jr}^{(j)}$//if the rollback shown as $(12)$ is needed,$A_{i_jr}^{(j)'}$ denotes $A_{i_jr}^{(j)}|_{t-1}$\;
+			$A_{i_jr}^{(j)}=A_{i_jr}^{(j)}-\mathrm{<!-- -->{\bf sign}}\left(g_{i_jr}^{(j)}\right)\cdot\delta_{i_jr}^{(j)}$\;
+		}
+		
+		\Repeat(//other rounds of iterations for computing component matrices){$\bm{L\le \varepsilon}$ or maximum iterations exhausted}
+		{
+			$l'=L$ //if we need to judge whether $(11)$ is true then $l'$ denotes $L|_t$\;
+			\For{ each $A_{i_jr}^{<!-- -->{j}}(1\le j\le N,1\le i_j\le I_j,1\le r\le R)$}
+			{
+				\If{$g_{i_jr}^{(j)}\cdot g_{i_jr}^{(j)'}>0$}
+				{
+					$A_{i_jr}^{(j)'}=A_{i_jr}^{(j)} $\;
+					$g_{i_jr}^{(j)'}=g_{i_jr}^{(j)} $\;
+					$\delta_{i_jr}^{(j)}=\bm{\min}\left(\delta_{i_jr}^{(j)}\cdot\eta^{+},Max\_Step\_Size\right)$\;
+					$A_{i_jr}^{(j)}=A_{i_jr}^{(j)}-\mathrm{<!-- -->{\bf sign}}\left(g_{i_jr}^{(j)}\right)\cdot\delta_{i_jr}^{(j)}$\;
+				}
+				\ElseIf{$g_{i_jr}^{(j)}\cdot g_{i_jr}^{(j)'}<0$}
+				{
+					\If{$l'>l$\hspace*{-1pt}\textacutedbl}
+					{
+						$g_{i_jr}^{(j)'}=g_{i_jr}^{(j)}$\;
+						$A_{i_jr}^{(j)}=A_{i_jr}^{(j)'}$// if $(11)$ is true then rollback as $(12)$\;
+						$\delta_{i_jr}^{(j)}=\bm{\max}\left(\delta_{i_jr}^{(j)}\times\eta^{-},Min\_Step\_Size\right)$\;
+					}
+					\Else
+					{
+						$A_{i_jr}^{(j)'}=A_{i_jr}^{(j)} $\;
+						$g_{i_jr}^{(j)'}=g_{i_jr}^{(j)} $\;
+						$\delta_{i_jr}^{(j)}=\bm{\max}\left(\delta_{i_jr}^{(j)}\cdot\eta^{-},Min\_Step\_Size\right)$\;
+						$A_{i_jr}^{(j)}=A_{i_jr}^{(j)}-\mathrm{<!-- -->{\bf sign}}\left(g_{i_jr}^{(j)}\right)\cdot\delta_{i_jr}^{(j)}$\;
+					}
+				}
+				\Else
+				{
+					$A_{i_jr}^{(j)'}=A_{i_jr}^{(j)} $\;
+					$g_{i_jr}^{(j)'}=g_{i_jr}^{(j)} $\;
+					$A_{i_jr}^{(j)}=A_{i_jr}^{(j)}-\mathrm{<!-- -->{\bf sign}}\left(g_{i_jr}^{(j)}\right)\cdot\delta_{i_jr}^{(j)}$\;
+				}
+			}
+			$l$\hspace*{-1pt}\textacutedbl$=l'$\;
+		}
+	\end{algorithm}
+\end{document}

@@ -1,0 +1,81 @@
+\documentclass[]{article}
+%*********************************************************
+% 头文件部分
+\makeatletter
+\newif\if@restonecol
+\makeatother
+\let\algorithm\relax
+\let\endalgorithm\relax
+\usepackage[linesnumbered,ruled,vlined]{algorithm2e}%[ruled,vlined]{
+\usepackage{algpseudocode}
+\usepackage{amsmath}
+\renewcommand{\algorithmicrequire}{\textbf{Input:}}  % Use Input in the format of Algorithm
+\renewcommand{\algorithmicensure}{\textbf{Output:}} % Use Output in the format of Algorithm 
+%*********************************************************
+
+%opening
+\title{}
+\author{}
+
+\begin{document}
+	
+	\maketitle
+	
+	\begin{abstract}
+		
+	\end{abstract}
+	
+	\section{}
+	
+\begin{algorithm}
+	\caption{Storage node selection}
+	\LinesNumbered
+	\KwIn{host server $PM_s$ that the checkpoint image $Img$ is fetched from, $subnet_s$ that $PM_s$ belongs to, $pod_s$ that $PM_s$ belongs to}
+	\KwOut{Image storage server $storageserver$}
+	
+	\For{ each host server $PM_i$ in the same subnet with $PM_s$ }
+	{
+		\If{ $PM_i$ is not a service providing node or checkpoint image storage node of $S_k$ }
+		{
+			add $PM_i$ to $candidateList$ \;
+		}
+	}
+	sort $candidateList$ by reliability desc\;
+	init $storageserver$ ;
+	\For{ each $PM_k$ in $candidateList$}
+	{
+		
+		\If{ $SP(PM_k)$ $\geq$ $E(SP)$ of $pod_i$ and $BM_k$ $\le$ size of $Img$ }
+		{
+			assign $PM_k$ to $storageserver$\;
+			goto final\;
+		}
+	}
+	clear $candidateList$\;
+	add all other subnets in $pod_s$ to $netList$\;
+	\For{ each subnet $subnet_j$ in $netList$}
+	{
+		clear $candidateList$\;
+		\For {each $PM_i$ in $subnet_j$ }
+		{
+			\If{ $PM_i$ is not a service providing node or checkpoint image storage node of $S_k$ }
+			{
+				add $PM_i$ to $candidateList$\;
+			}
+		}
+		sort all host in $candidateList$ by reliability desc\;
+		\For{ each $PM_k$ in $candidateList$}
+		{
+			
+			\If{$SP(PM_k)$ $\geq$ $E(SP)$ of $pod_i$ and $BM_k$ $\le$ size of $Img$}
+			{
+				assign $PM_k$ to $storageserver$ \;
+				goto final\;
+			}
+		}
+	}
+	\textbf{final} \;
+	\textbf{return} $storageserver$;
+\end{algorithm}
+	
+\end{document}

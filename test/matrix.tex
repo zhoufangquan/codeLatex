@@ -1,0 +1,176 @@
+%导言区
+\documentclass{ctexart} %ctexbook, ctexreport, ctexletter
+
+\usepackage{amsmath}  %需要引入amsmath宏包
+
+\newcommand{\adots}{\mathinner{\mkern2mu%
+		\raisebox{0.1em}{.}\mkern2mu\raisebox{0.4em}{.}%
+		\mkern2mu\raisebox{0.7em}{.}\mkern1mu}}
+
+\title{\heiti 我的第一篇论文}
+\author{\kaishu 周方全}
+\date{\today}
+
+
+% 正文区（文稿区）
+\begin{document}
+	\maketitle
+	
+	
+	\[
+	\begin{matrix}
+	    0 & 1 \\
+	    1 & 0 
+	\end{matrix} \qquad
+	\begin{pmatrix}
+		0 & -1 \\
+		i & 0
+	\end{pmatrix} \qquad
+	\begin{bmatrix}
+	0 & -1 \\
+	i & 0
+	\end{bmatrix} \qquad
+	\begin{Bmatrix}
+	0 & -1 \\
+	i & 0
+	\end{Bmatrix} \qquad
+	\begin{vmatrix}
+	0 & -1 \\
+	i & 0
+	\end{vmatrix} \qquad
+	\begin{Vmatrix}
+	0 & -1 \\
+	i & 0
+	\end{Vmatrix}	
+	\]
+	
+	\[
+	A = \begin{pmatrix}
+		a_{11}^2 & a_{12}^3 & a_{13}^{12} \\
+		0 & a_{22} & a_{23} \\
+		0 & 0 & a^{123}
+	\end{pmatrix}
+	\]
+	
+	\[
+	A = \begin{bmatrix}
+		a_{11} & \dots & a_{1n} \\
+		& \ddots & \vdots \\
+		0 & & a_{nn}
+	\end{bmatrix}_{n \times n}
+	\]
+	
+	\[
+	\begin{pmatrix}
+		\begin{matrix}
+			1 & 0 \\ 0 & 1
+		\end{matrix}
+		& \text{\Large 0} \\
+		
+		\text{\Large 0} & 
+		\begin{matrix}
+			1 & 0 \\ 0 & -1
+		\end{matrix}
+	\end{pmatrix}
+	\]
+	
+	\[
+	\begin{pmatrix}
+		a_{11} & a_{12} & \cdots & a_{1n} \\
+		& a_{22} & \cdots & a_{2n} \\
+		&        & \ddots & \vdots \\
+		\multicolumn{2}{c}{\raisebox{1.3ex}[0pt]{\huge 0}}
+		&        & a_{nn}
+	\end{pmatrix}
+	\]
+	
+	\[
+	\begin{Bmatrix}
+		a_{11} & \cdots & a_{1n} \\
+			   & \ddots & \vdots \\
+			   &		& a_{nn}
+	\end{Bmatrix}
+	\]
+	
+	\[
+	\begin{pmatrix}
+		1 & frac 12 & \dots & \frac 1n \\
+		\hdotsfor{4} \\
+		m & \frac m2 & \dots & frac mn
+	\end{pmatrix}
+	\]
+	
+	复数 $z = (x, y) $ 也可用矩阵
+	\begin{math}
+	\left(
+		\begin{smallmatrix}
+		x & -y \\ y & x
+		\end{smallmatrix}
+	\right)
+	\end{math}来表示
+	
+	\[\begin{array}{r|r}
+		\frac{1}{2} & 0 \\
+		\hline
+		0 & -\frac {a}{bc} \\
+	\end{array}\]
+	
+	
+	\[\begin{array}{c@{\hspace{-5pt}}l}
+		% 第一行第一列
+		\left(
+			\begin{array}{ccc|ccc}
+				a & \cdots & a & b & \cdots & b \\ 
+				& \ddots & \vdots & \vdots & \adots\\
+				& & a & b \\ \hline
+				& & & c & \cdots & c \\ 
+				& & & \vdots & & \vdots \\
+				\multicolumn{3}{c|}{\raisebox{2ex}[0pt]{\Huge 0}}
+				& c & \cdots & c
+			\end{array}
+		\right)
+		&
+		% 第一行第二列
+		\begin{array}{l}
+		\left.\rule{0mm}{7mm}\right\}q \\
+		\\
+		\left.\rule{0mm}{7mm}\right\}p 
+		\end{array}
+		\\[-5pt]
+		% 第二行第一列
+		\begin{array}{cc}
+			\underbrace{\rule{17mm}{0mm}}_m &
+			\underbrace{\rule{17mm}{0mm}}_m
+		\end{array}
+		&
+	\end{array}\]
+	
+%	\[\begin{bmatrix}
+%		1
+%	\end{bmatrix}\]
+	
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

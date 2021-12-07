@@ -1,0 +1,38 @@
+\documentclass[11pt]{ctexart}
+\usepackage{amsmath}
+%\usepackage[top=2cm, bottom=2cm, left=2cm, right=2cm]{geometry}
+\usepackage{algorithm}
+\usepackage{algorithmicx}
+\usepackage{algpseudocode}
+
+\floatname{algorithm}{算法}
+\renewcommand{\algorithmicrequire}{\textbf{输入:}}
+\renewcommand{\algorithmicensure}{\textbf{输出:}}
+
+\begin{document}
+	\begin{algorithm}
+		\caption{用归并排序求逆序数}
+		\begin{algorithmic}[1] %每行显示行号
+			\Require 待训练参数$\theta$，一间房子的属性$x^{(i)}$，这间房子的实际价格$ y^{(i)} $，训练轮次 $ ep $
+			\Ensure 更新后的参数$\theta$
+			\While{$i<middle$ \textbf{and} $j<right$}
+			\If{$Array[i]<Array[j]$}
+			\State $B[k++]\gets Array[i++]$
+			\Else
+			\State $B[k++] \gets Array[j++]$
+			\State $result \gets result + (middle - i)$
+			\EndIf
+			\EndWhile
+			\While{$i<middle$}
+			\State $B[k++] \gets Array[i++]$
+			\EndWhile
+			\While{$j<right \delta $}
+			\State $B[k++] \gets Array[j++]$
+			\EndWhile
+			\For{$i = 0 \to k-1$}
+			\State $Array[left + i] \gets B[i]$
+			\EndFor
+			\State \Return{$result$}
+		\end{algorithmic}
+	\end{algorithm}
+\end{document}
