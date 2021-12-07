@@ -1,12 +1,12 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.10.28)  15 NOV 2021 21:30
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.10.28)  7 DEC 2021 19:10
 entering extended mode
  restricted \write18 enabled.
+ file:line:error style messages enabled.
  %&-line parsing enabled.
-**伪代码3.tex
-(./伪代码3.tex
+**d:/zfq/Code/Latex/tools/伪代码/伪代码3
+(d:/zfq/Code/Latex/tools/伪代码/伪代码3.tex
 LaTeX2e <2020-10-01> patch level 4
-L3 programming layer <2021-02-18>
-(c:/texlive/2021/texmf-dist/tex/latex/base/article.cls
+L3 programming layer <2021-02-18> (c:/texlive/2021/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2020/04/10 v1.4m Standard LaTeX document class
 (c:/texlive/2021/texmf-dist/tex/latex/base/size10.clo
 File: size10.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
@@ -22,27 +22,22 @@ File: size10.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen138
-)
-(c:/texlive/2021/texmf-dist/tex/latex/algorithm2e/algorithm2e.sty
+) (c:/texlive/2021/texmf-dist/tex/latex/algorithm2e/algorithm2e.sty
 Invalid UTF-8 byte or sequence at line 284 replaced by U+FFFD.
 Invalid UTF-8 byte or sequence at line 299 replaced by U+FFFD.
 Invalid UTF-8 byte or sequence at line 550 replaced by U+FFFD.
 Package: algorithm2e 2017/07/18 v5.2 algorithms environments
 \c@AlgoLine=\count183
-
-(c:/texlive/2021/texmf-dist/tex/latex/base/ifthen.sty
+ (c:/texlive/2021/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
 \algocf@hangindent=\skip49
-
-(c:/texlive/2021/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
+ (c:/texlive/2021/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
 Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
 \c@checkoddpage=\count184
-)
-(c:/texlive/2021/texmf-dist/tex/latex/tools/xspace.sty
+) (c:/texlive/2021/texmf-dist/tex/latex/tools/xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
-)
-(c:/texlive/2021/texmf-dist/tex/latex/relsize/relsize.sty
+) (c:/texlive/2021/texmf-dist/tex/latex/relsize/relsize.sty
 Package: relsize 2013/03/29 ver 4.1
 )
 \skiptotal=\skip50
@@ -80,11 +75,9 @@ Package: relsize 2013/03/29 ver 4.1
 \c@algocf=\count187
 \algocf@algoframe=\box53
 \algocf@algobox=\box54
-)
-(c:/texlive/2021/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
+) (c:/texlive/2021/texmf-dist/tex/latex/algorithmicx/algpseudocode.sty
 Package: algpseudocode 
-
-(c:/texlive/2021/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
+ (c:/texlive/2021/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
 Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
 
 Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
@@ -107,17 +100,14 @@ Package: amsmath 2020/09/23 v2.17i AMS math features
 For additional information on amsmath, use the `?' option.
 (c:/texlive/2021/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
-
-(c:/texlive/2021/texmf-dist/tex/latex/amsmath/amsgen.sty
+ (c:/texlive/2021/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks15
 \ex@=\dimen145
-))
-(c:/texlive/2021/texmf-dist/tex/latex/amsmath/amsbsy.sty
+)) (c:/texlive/2021/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen146
-)
-(c:/texlive/2021/texmf-dist/tex/latex/amsmath/amsopn.sty
+) (c:/texlive/2021/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count195
@@ -157,11 +147,9 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
 \mathdisplay@stack=\toks19
 LaTeX Info: Redefining \[ on input line 2923.
 LaTeX Info: Redefining \] on input line 2924.
-)
-(c:/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
+) (c:/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
 File: l3backend-xetex.def 2021-03-18 L3 backend support: XeTeX
-
-(|extractbb --version)
+ (|extractbb --version)
 \c__kernel_sys_dvipdfmx_version_int=\count273
 \l__color_backend_stack_int=\count274
 \g__color_backend_stack_int=\count275
@@ -170,7 +158,8 @@ File: l3backend-xetex.def 2021-03-18 L3 backend support: XeTeX
 \g__pdf_backend_object_int=\count277
 \g__pdf_backend_annotation_int=\count278
 \g__pdf_backend_link_int=\count279
-) (./伪代码3.aux)
+)
+No file 伪代码3.aux.
 \openout1 = `伪代码3.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
@@ -182,9 +171,7 @@ LaTeX Font Info:    ... okay on input line 20.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
 LaTeX Font Info:    ... okay on input line 20.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 20.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 2
-0.
-
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 20.
 (c:/texlive/2021/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
@@ -199,12 +186,12 @@ LaTeX Font Info:    ... okay on input line 20.
 
 ] (./伪代码3.aux) ) 
 Here is how much of TeX's memory you used:
- 2585 strings out of 476919
- 39804 string characters out of 5825423
+ 2584 strings out of 476919
+ 39868 string characters out of 5825423
  347317 words of memory out of 5000000
  22595 multiletter control sequences out of 15000+600000
  407374 words of font info for 51 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 67i,17n,74p,310b,500s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 67i,17n,74p,334b,500s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on 伪代码3.pdf (1 page).

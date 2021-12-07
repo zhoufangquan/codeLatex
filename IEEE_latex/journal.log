@@ -1,9 +1,10 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.4.8)  11 SEP 2021 15:52
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.10.28)  7 DEC 2021 19:00
 entering extended mode
  restricted \write18 enabled.
+ file:line:error style messages enabled.
  %&-line parsing enabled.
-**journal.tex
-(./journal.tex
+**d:/zfq/Code/Latex/IEEE_latex/journal
+(d:/zfq/Code/Latex/IEEE_latex/journal.tex
 LaTeX2e <2020-10-01> patch level 4
 L3 programming layer <2021-02-18> (./journal.cls
 
@@ -18,8 +19,7 @@ Document Class: IEEEtran 2007/03/05 V1.7a by Michael Shell
 \@IEEEtrantmpcountA=\count175
 \@IEEEtrantmpcountB=\count176
 \@IEEEtrantmptoksA=\toks15
-LaTeX Font Info:    Trying to load font information for TU+ptm on input line 36
-6.
+LaTeX Font Info:    Trying to load font information for TU+ptm on input line 366.
 LaTeX Font Info:    No file TUptm.fd. on input line 366.
 
 LaTeX Font Warning: Font shape `TU/ptm/m/n' undefined
@@ -67,10 +67,9 @@ LaTeX Font Warning: Font shape `TU/ptm/bx/it' undefined
 \@IEEEtmpitemindent=\dimen152
 \c@IEEEbiography=\count186
 \@IEEEtranrubishbin=\box47
-)
-(d:/ProgramData/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
+) (c:/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
 File: l3backend-xetex.def 2021-03-18 L3 backend support: XeTeX
-(|extractbb --version)
+ (|extractbb --version)
 \c__kernel_sys_dvipdfmx_version_int=\count187
 \l__color_backend_stack_int=\count188
 \g__color_backend_stack_int=\count189
@@ -91,10 +90,8 @@ LaTeX Font Info:    ... okay on input line 393.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 393.
 LaTeX Font Info:    ... okay on input line 393.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 393.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 3
-93.
-
-(d:/ProgramData/texlive/2021/texmf-dist/tex/latex/base/ts1cmr.fd
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 393.
+ (c:/texlive/2021/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 393.
@@ -224,12 +221,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 1102 strings out of 476919
- 22130 string characters out of 5820049
+ 1103 strings out of 476919
+ 22155 string characters out of 5825423
  319654 words of memory out of 5000000
  21153 multiletter control sequences out of 15000+600000
  406269 words of font info for 49 fonts, out of 8000000 for 9000
  1351 hyphenation exceptions out of 8191
- 48i,8n,50p,188b,265s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 48i,8n,50p,213b,265s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on journal.pdf (1 page).
