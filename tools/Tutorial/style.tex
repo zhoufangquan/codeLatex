@@ -1,0 +1,120 @@
+% 伪代码的格式设置
+%***************************************************************************************************
+% 头文件部分
+\makeatletter
+\newif\if@restonecol
+\makeatother
+\let\algorithm\relax
+\let\endalgorithm\relax
+\usepackage[linesnumbered,ruled,vlined]{algorithm2e}%[ruled,vlined]{
+	\usepackage{algpseudocode}
+	\renewcommand{\algorithmicrequire}{\textbf{Input:}}  % Use Input in the format of Algorithm
+	\renewcommand{\algorithmicensure}{\textbf{Output:}} % Use Output in the format of Algorithm 
+	%***************************************************************************************************
+	
+	\usepackage{titlesec}  % 自定义多级标题格式的宏包
+	
+	% \titleformat{command}[shape]  % 定义标题类型和标题样式，字体
+	% {format}  % 定义标题格式:字号（大小），加粗，斜体 例如 \fontsize{20.75pt}\bfseries\centering
+	% {label}  % 定义标题的标签，即标题的标号等
+	% {sep}  % 定义标题和标号之间的水平距离
+	% {before-code}  % 定义标题前的内容
+	
+	\titleformat{\section}[block]%定义标题类型和标题样式，字体
+	{\LARGE\bfseries}  % 定义标题格式:字号（大小），加粗(，斜体)，居中
+	{\bfseries\arabic{section}}  % 定义标题的标签，即标题的标号等
+	{0.5em}  % 定义标题和标号之间的水平距离
+	{}  % 定义标题前的内容
+	[]  % 定义标题后的内容
+	
+	\titleformat{\subsection}[block]  % 定义标题类型和标题样式，字体
+	{\Large\itshape\bfseries}  % 定义标题格式:字号（大小），加粗，斜体
+	{\bfseries\arabic{section}.\bfseries\arabic{subsection}}  % 定义标题的标签，即标题的标号等
+	{0.5em}  % 定义标题和标号之间的水平距离
+	{}  % 定义标题前的内容
+	[]  % 定义标题后的内容
+	
+	\titleformat{\subsubsection}[block]  % 定义标题类型和标题样式，字体
+	{\large\bfseries}  % 定义标题格式:字号（大小），加粗，斜体
+	{\bfseries\arabic{section}.\bfseries\arabic{subsection}.\bfseries\arabic{subsubsection}}  % 定义标题的标签，即标题的标号等
+	{0.5em}  % 定义标题和标号之间的水平距离
+	{}  % 定义标题前的内容
+	[]  % 定义标题后的内容
+	
+	\titleformat{\paragraph}[block]
+	{\small\bfseries}
+	{[\arabic{paragraph}]}
+	{1em}
+	{}
+	[] 
+	
+	% \titleformat{\section}[block]{\LARGE\bfseries}{\Roman{section}}{1em}{Hello: }[]
+	% \titleformat{\subsection}[block]{\Large\itshape\mdseries}{\arabic{section}.\arabic{subsection}}{0.5em}{}[]
+	% \titleformat{\subsubsection}[block]{\normalsize\bfseries}{\arabic{subsection}-\arabic{subsubsection}}{0em}{}[]
+	% \titleformat{\paragraph}[block]{\small\bfseries}{[\arabic{paragraph}]}{1em}{}[]
+	
+	
+	
+	\usepackage{setspace}  % 设置行间距
+	\usepackage{geometry}  % 设置一些页面格式，还没开发安全
+	\geometry{a4paper,left=1.91cm,right=1.91cm,top=2.25cm,bottom=2.0cm}
+	
+	% 正文字体的设置
+	\PassOptionsToPackage{no-math}{fontspec}
+	\usepackage{mathspec}
+	\setmainfont{Times New Roman}  % 正文英文字体的设置
+	\setCJKmainfont{SimSun}[AutoFakeBold,ItalicFont=KaiTi]  % 正文中文字体的设置
+	\setCJKsansfont{SimHei}%对应sf无衬线
+	\setCJKmonofont{FangSong}%对应tt打字机
+	%\newCJKfontfamily{\kaishu}[AutoFakeBold={2.17}]{STXingkai}
+	
+	
+	% 摘要格式的设置
+	\usepackage{tikz}
+	\usetikzlibrary{shapes,shadows}
+	\tikzstyle{abstractbox} = [draw=black, fill=white, rectangle, 
+	inner sep=20pt, style=rounded corners, drop shadow={fill=black,
+		opacity=0.5}]
+	\tikzstyle{abstracttitle} =[fill=white]
+	
+	\newcommand{\boxabstract}[2][fill=white]{
+		\begin{center}
+			\begin{tikzpicture}
+				\node [abstractbox, #1] (box)
+				{\begin{minipage}{0.88\linewidth}
+						\setlength{\parindent}{2mm}
+						\small #2
+				\end{minipage}};
+				\node[abstracttitle, right=10pt] at (box.north west) {\textbf{摘要}};
+			\end{tikzpicture}
+		\end{center}
+	}
+	
+	
+	%\newsavebox{\myabstractbox}
+	%\providecommand{\abstractnode}[2]{
+		%	\begin{tikzpicture}%
+			%		\node [abstractbox, fill=#1](box)%
+			%		{#2};%
+			%		\node[abstracttitle, right=10pt] at (box.north west) {Abstract};
+			%	\end{tikzpicture}
+		%}
+	%
+	%
+	%\newenvironment{abstractbox][1][white]{
+			%		\begin{center}%
+				%			\def\abs@bgcok{#1}%
+				%			\begin{Irbox}{\myabstractbox}
+					%				\begin{minipage}{.80\linewidth}%% lparindent2em%
+						%					\footnotesize #2
+						%				\end{minipage}
+					%			\end{Irbox}
+				%%			\abstractnode{\abs@bgcol}{\usebox{\myabstractbox}}%
+				%		\end{center}%
+			%	}
+		
+		
+		
+		
+		
+		

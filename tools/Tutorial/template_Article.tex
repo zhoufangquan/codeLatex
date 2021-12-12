@@ -12,16 +12,7 @@
 %\usepackage{lineno}	% 为每一行文字编号，暂时未用到
 %\usepackage{setspace}	% 暂时未用到
 
-%*****************************************************
-%			伪代码
-\usepackage{algorithm}
-\usepackage{algorithmicx}
-\usepackage{algpseudocode}
-
-\floatname{algorithm}{算法}
-\renewcommand{\algorithmicrequire}{\textbf{输入:}}
-\renewcommand{\algorithmicensure}{\textbf{输出:}}
-%*****************************************************
+\include{style}
 
 \title{\LaTeX 排版入门的正确姿势}
 \author{碎金}
@@ -35,11 +26,11 @@
 \setcounter{page}{1}	% 重置该页的页码
 \pagenumbering{roman}	% 设置该页的页码格式
 
-\begin{abstract}	% 文字直接在创建好的环境中输入就可以了。编译后就可以看到效果。
+\boxabstract{	% 文字直接在创建好的环境中输入就可以了。编译后就可以看到效果。
 
 这里可以写你的摘要。\LaTeX 是一个很好用的排版工具，常常用在学术论文的排版上。优点是排版成果美观，功能强大。缺点是入门门槛相对较高，学习曲线陡峭，不是所见即所得的排版工具。
-
-\end{abstract}
+}
+%\end{abstract}
 
 \clearpage
 \tableofcontents
@@ -245,16 +236,4 @@ TeXstudio创建行内公式环境的快捷键：Ctrl+Shift+M。例如这样的�
 \bibliographystyle{plain}	% 设置文献样式
 \bibliography{ExampleBib}	% 设置文献的文件路径
 \end{document}
-
-
-
-
-
-
-\\
-= &
--\frac{1}{m}\left[ \sum_{i=1}^{m} x_i \left(1\{y_i = j\}  - \sum_{j=1}^{k} 1\{y_i = j\} \frac{\exp(\theta_j^T x_i)}{\sum_{l=1}^{k}\exp(\theta_l^T x_i)} \right) \right] 
-
-
-
 

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.10.28)  8 DEC 2021 22:33
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.10.28)  8 DEC 2021 22:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1082,15 +1082,15 @@ File: picture/01.jpg Graphic file (type bmp)
 ]
 
 LaTeX Font Warning: Font shape `OMX/cmex/m/n' in size <18.06749> not available
-(Font)              size <17.28> substituted on input line 74.
+(Font)              size <17.28> substituted on input line 89.
 
 
 LaTeX Font Warning: Font shape `OMX/cmex/m/n' in size <15.05624> not available
-(Font)              size <14.4> substituted on input line 74.
+(Font)              size <14.4> substituted on input line 89.
 
 
 LaTeX Font Warning: Font shape `TU/FZMiaoWuJW.TTF(0)/m/it' undefined
-(Font)              using `TU/FZMiaoWuJW.TTF(0)/m/n' instead on input line 104.
+(Font)              using `TU/FZMiaoWuJW.TTF(0)/m/n' instead on input line 119.
 
 
 [2] [3] (./demo.aux)
@@ -1103,10 +1103,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 22827 strings out of 476919
- 526395 string characters out of 5825423
+ 22838 strings out of 476919
+ 527218 string characters out of 5825423
  908179 words of memory out of 5000000
- 42366 multiletter control sequences out of 15000+600000
+ 42377 multiletter control sequences out of 15000+600000
  411021 words of font info for 92 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  120i,15n,121p,441b,773s stack positions out of 5000i,500n,10000p,200000b,80000s
