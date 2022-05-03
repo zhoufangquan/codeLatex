@@ -1,18 +1,22 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.10.28)  7 DEC 2021 19:09
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.10.27)  23 DEC 2021 21:14
 entering extended mode
  restricted \write18 enabled.
- file:line:error style messages enabled.
  %&-line parsing enabled.
-**d:/zfq/Code/Latex/tools/伪代码/伪代码1
-(d:/zfq/Code/Latex/tools/伪代码/伪代码1.tex
+**伪代码1.tex
+(./伪代码1.tex
 LaTeX2e <2020-10-01> patch level 4
-L3 programming layer <2021-02-18> (c:/texlive/2021/texmf-dist/tex/latex/ctex/ctexart.cls (c:/texlive/2021/texmf-dist/tex/latex/ctex/config/ctexbackend.cfg
+L3 programming layer <2021-02-18>
+(c:/texlive/2021/texmf-dist/tex/latex/ctex/ctexart.cls
+(c:/texlive/2021/texmf-dist/tex/latex/ctex/config/ctexbackend.cfg
 File: ctexbackend.cfg 2021/03/14 v2.5.6 Backend configuration file (CTEX)
-) (c:/texlive/2021/texmf-dist/tex/latex/l3kernel/expl3.sty
+)
+(c:/texlive/2021/texmf-dist/tex/latex/l3kernel/expl3.sty
 Package: expl3 2021-02-18 L3 programming layer (loader) 
- (c:/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
+
+(c:/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
 File: l3backend-xetex.def 2021-03-18 L3 backend support: XeTeX
- (|extractbb --version)
+
+(|extractbb --version)
 \c__kernel_sys_dvipdfmx_version_int=\count175
 \l__color_backend_stack_int=\count176
 \g__color_backend_stack_int=\count177
@@ -22,29 +26,41 @@ File: l3backend-xetex.def 2021-03-18 L3 backend support: XeTeX
 \g__pdf_backend_annotation_int=\count180
 \g__pdf_backend_link_int=\count181
 ))
-Document Class: ctexart 2021/03/14 v2.5.6 Chinese adapter for class article (CTEX)
-(c:/texlive/2021/texmf-dist/tex/latex/l3packages/xparse/xparse.sty (c:/texlive/2021/texmf-dist/tex/latex/l3packages/xparse/xparse-2020-10-01.sty (c:/texlive/2021/texmf-dist/tex/latex/l3packages/xparse/xparse-generic.tex))) (c:/texlive/2021/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+Document Class: ctexart 2021/03/14 v2.5.6 Chinese adapter for class article (CT
+EX)
+(c:/texlive/2021/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+(c:/texlive/2021/texmf-dist/tex/latex/l3packages/xparse/xparse-2020-10-01.sty
+(c:/texlive/2021/texmf-dist/tex/latex/l3packages/xparse/xparse-generic.tex)))
+(c:/texlive/2021/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
 Package: l3keys2e 2021-03-12 LaTeX2e option processing using LaTeX3 keys
-) (c:/texlive/2021/texmf-dist/tex/latex/ctex/ctexhook.sty
+)
+(c:/texlive/2021/texmf-dist/tex/latex/ctex/ctexhook.sty
 Package: ctexhook 2021/03/14 v2.5.6 Document and package hooks (CTEX)
-) (c:/texlive/2021/texmf-dist/tex/latex/ctex/ctexpatch.sty
+)
+(c:/texlive/2021/texmf-dist/tex/latex/ctex/ctexpatch.sty
 Package: ctexpatch 2021/03/14 v2.5.6 Patching commands (CTEX)
-) (c:/texlive/2021/texmf-dist/tex/latex/base/fix-cm.sty
+)
+(c:/texlive/2021/texmf-dist/tex/latex/base/fix-cm.sty
 Package: fix-cm 2015/01/14 v1.1t fixes to LaTeX
- (c:/texlive/2021/texmf-dist/tex/latex/base/ts1enc.def
+
+(c:/texlive/2021/texmf-dist/tex/latex/base/ts1enc.def
 File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding TS1 on input line 47.
-)) (c:/texlive/2021/texmf-dist/tex/latex/everysel/everysel.sty
+))
+(c:/texlive/2021/texmf-dist/tex/latex/everysel/everysel.sty
 Package: everysel 2021/01/20 v2.1 EverySelectfont Package (MS)
- (c:/texlive/2021/texmf-dist/tex/latex/everysel/everysel-2011-10-28.sty))
+
+(c:/texlive/2021/texmf-dist/tex/latex/everysel/everysel-2011-10-28.sty))
 \l__ctex_tmp_int=\count182
 \l__ctex_tmp_box=\box48
 \l__ctex_tmp_dim=\dimen138
 \g__ctex_section_depth_int=\count183
 \g__ctex_font_size_int=\count184
- (c:/texlive/2021/texmf-dist/tex/latex/ctex/config/ctexopts.cfg
+
+(c:/texlive/2021/texmf-dist/tex/latex/ctex/config/ctexopts.cfg
 File: ctexopts.cfg 2021/03/14 v2.5.6 Option configuration file (CTEX)
-) (c:/texlive/2021/texmf-dist/tex/latex/base/article.cls
+)
+(c:/texlive/2021/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2020/04/10 v1.4m Standard LaTeX document class
 (c:/texlive/2021/texmf-dist/tex/latex/base/size11.clo
 File: size11.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
@@ -60,11 +76,14 @@ File: size11.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen139
-) (c:/texlive/2021/texmf-dist/tex/latex/ctex/engine/ctex-engine-xetex.def
+)
+(c:/texlive/2021/texmf-dist/tex/latex/ctex/engine/ctex-engine-xetex.def
 File: ctex-engine-xetex.def 2021/03/14 v2.5.6 XeLaTeX adapter (CTEX)
- (c:/texlive/2021/texmf-dist/tex/xelatex/xecjk/xeCJK.sty
+
+(c:/texlive/2021/texmf-dist/tex/xelatex/xecjk/xeCJK.sty
 Package: xeCJK 2020/10/19 v3.8.6 Typesetting CJK scripts with XeLaTeX
- (c:/texlive/2021/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate.sty
+
+(c:/texlive/2021/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate.sty
 Package: xtemplate 2021-03-12 L3 Experimental prototype document functions
 \l__xtemplate_tmp_dim=\dimen140
 \l__xtemplate_tmp_int=\count193
@@ -129,10 +148,13 @@ Package xtemplate Info: Declaring object type 'xeCJK/punctuation' taking 0
 \g__xeCJK_fam_allocation_int=\count269
 \l__xeCJK_verb_case_int=\count270
 \l__xeCJK_verb_exspace_skip=\skip55
- (c:/texlive/2021/texmf-dist/tex/latex/fontspec/fontspec.sty
+
+(c:/texlive/2021/texmf-dist/tex/latex/fontspec/fontspec.sty
 Package: fontspec 2020/02/21 v2.7i Font selection for XeLaTeX and LuaLaTeX
- (c:/texlive/2021/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
-Package: fontspec-xetex 2020/02/21 v2.7i Font selection for XeLaTeX and LuaLaTeX
+
+(c:/texlive/2021/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
+Package: fontspec-xetex 2020/02/21 v2.7i Font selection for XeLaTeX and LuaLaTe
+X
 \l__fontspec_script_int=\count271
 \l__fontspec_language_int=\count272
 \l__fontspec_strnum_int=\count273
@@ -147,27 +169,36 @@ Package: fontspec-xetex 2020/02/21 v2.7i Font selection for XeLaTeX and LuaLaTeX
 \l__fontspec_tmpa_dim=\dimen169
 \l__fontspec_tmpb_dim=\dimen170
 \l__fontspec_tmpc_dim=\dimen171
- (c:/texlive/2021/texmf-dist/tex/latex/base/fontenc.sty
+
+(c:/texlive/2021/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2020/08/10 v2.0s Standard LaTeX package
-) (c:/texlive/2021/texmf-dist/tex/latex/fontspec/fontspec.cfg))) (c:/texlive/2021/texmf-dist/tex/xelatex/xecjk/xeCJK.cfg
+)
+(c:/texlive/2021/texmf-dist/tex/latex/fontspec/fontspec.cfg)))
+(c:/texlive/2021/texmf-dist/tex/xelatex/xecjk/xeCJK.cfg
 File: xeCJK.cfg 2020/10/19 v3.8.6 Configuration file for xeCJK package
 ))
 \ccwd=\dimen172
 \l__ctex_ccglue_skip=\skip56
 )
 \l__ctex_ziju_dim=\dimen173
- (c:/texlive/2021/texmf-dist/tex/latex/zhnumber/zhnumber.sty
+
+(c:/texlive/2021/texmf-dist/tex/latex/zhnumber/zhnumber.sty
 Package: zhnumber 2020/05/01 v2.8 Typesetting numbers with Chinese glyphs
 \l__zhnum_scale_int=\count282
- (c:/texlive/2021/texmf-dist/tex/latex/zhnumber/zhnumber-utf8.cfg
+
+(c:/texlive/2021/texmf-dist/tex/latex/zhnumber/zhnumber-utf8.cfg
 File: zhnumber-utf8.cfg 2020/05/01 v2.8 Chinese numerals with UTF8 encoding
 ))
 \l__ctex_heading_skip=\skip57
- (c:/texlive/2021/texmf-dist/tex/latex/ctex/scheme/ctex-scheme-chinese-article.def
-File: ctex-scheme-chinese-article.def 2021/03/14 v2.5.6 Chinese scheme for article (CTEX)
+
+(c:/texlive/2021/texmf-dist/tex/latex/ctex/scheme/ctex-scheme-chinese-article.d
+ef
+File: ctex-scheme-chinese-article.def 2021/03/14 v2.5.6 Chinese scheme for arti
+cle (CTEX)
  (c:/texlive/2021/texmf-dist/tex/latex/ctex/config/ctex-name-utf8.cfg
 File: ctex-name-utf8.cfg 2021/03/14 v2.5.6 Caption with encoding UTF-8 (CTEX)
-)) (c:/texlive/2021/texmf-dist/tex/latex/ctex/fontset/ctex-fontset-fandol.def
+))
+(c:/texlive/2021/texmf-dist/tex/latex/ctex/fontset/ctex-fontset-fandol.def
 File: ctex-fontset-fandol.def 2021/03/14 v2.5.6 Fandol fonts definition (CTEX)
 
 
@@ -177,7 +208,8 @@ Package fontspec Warning: Font "FandolSong-Regular" does not contain requested
 
 Package fontspec Info: Font family 'FandolSong-Regular(0)' created for font
 (fontspec)             'FandolSong-Regular' with options
-(fontspec)             [Script={CJK},Extension={.otf},BoldFont={FandolSong-Bold},ItalicFont={FandolKai-Regular}].
+(fontspec)             [Script={CJK},Extension={.otf},BoldFont={FandolSong-Bold
+},ItalicFont={FandolKai-Regular}].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
@@ -194,21 +226,25 @@ Package fontspec Info: Font family 'FandolSong-Regular(0)' created for font
 
 )) (c:/texlive/2021/texmf-dist/tex/latex/ctex/config/ctex.cfg
 File: ctex.cfg 2021/03/14 v2.5.6 Configuration file (CTEX)
-) (c:/texlive/2021/texmf-dist/tex/latex/amsmath/amsmath.sty
+)
+(c:/texlive/2021/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2020/09/23 v2.17i AMS math features
 \@mathmargin=\skip58
 
 For additional information on amsmath, use the `?' option.
 (c:/texlive/2021/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
- (c:/texlive/2021/texmf-dist/tex/latex/amsmath/amsgen.sty
+
+(c:/texlive/2021/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks15
 \ex@=\dimen174
-)) (c:/texlive/2021/texmf-dist/tex/latex/amsmath/amsbsy.sty
+))
+(c:/texlive/2021/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen175
-) (c:/texlive/2021/texmf-dist/tex/latex/amsmath/amsopn.sty
+)
+(c:/texlive/2021/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count283
@@ -248,22 +284,27 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
 \mathdisplay@stack=\toks19
 LaTeX Info: Redefining \[ on input line 2923.
 LaTeX Info: Redefining \] on input line 2924.
-) (c:/texlive/2021/texmf-dist/tex/latex/algorithms/algorithm.sty
+)
+(c:/texlive/2021/texmf-dist/tex/latex/algorithms/algorithm.sty
 Invalid UTF-8 byte or sequence at line 11 replaced by U+FFFD.
-Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating environment
- (c:/texlive/2021/texmf-dist/tex/latex/float/float.sty
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
+nment
+
+(c:/texlive/2021/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count295
 \float@exts=\toks20
 \float@box=\box52
 \@float@everytoks=\toks21
 \@floatcapt=\box53
-) (c:/texlive/2021/texmf-dist/tex/latex/base/ifthen.sty
+)
+(c:/texlive/2021/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
 \@float@every@algorithm=\toks22
 \c@algorithm=\count296
-) (c:/texlive/2021/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
+)
+(c:/texlive/2021/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
 Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
 
 Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
@@ -362,12 +403,12 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 
 ] (./伪代码1.aux) ) 
 Here is how much of TeX's memory you used:
- 7596 strings out of 476919
- 206100 string characters out of 5825423
+ 7595 strings out of 476919
+ 206018 string characters out of 5825423
  529368 words of memory out of 5000000
  27523 multiletter control sequences out of 15000+600000
  406947 words of font info for 52 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 101i,4n,104p,388b,403s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 101i,4n,104p,364b,403s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on 伪代码1.pdf (1 page).

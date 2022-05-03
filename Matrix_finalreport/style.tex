@@ -1,16 +1,28 @@
 % 伪代码的格式设置
-%***************************************************************************************************
-% 头文件部分
-\makeatletter
-\newif\if@restonecol
-\makeatother
-\let\algorithm\relax
-\let\endalgorithm\relax
-\usepackage[linesnumbered,ruled,vlined]{algorithm2e}%[ruled,vlined]{
+%%***************************************************************************************************
+%% 头文件部分
+%\makeatletter
+%\newif\if@restonecol
+%\makeatother
+%\let\algorithm\relax
+%\let\endalgorithm\relax
+%\usepackage[linesnumbered,ruled,vlined]{algorithm2e}%[ruled,vlined]{
+%\usepackage{algpseudocode}
+%\renewcommand{\algorithmicrequire}{\textbf{Input:}}  % Use Input in the format of Algorithm
+%\renewcommand{\algorithmicensure}{\textbf{Output:}} % Use Output in the format of Algorithm 
+%%***************************************************************************************************
+
+
+
+\usepackage{algorithm}
+\usepackage{algorithmicx}
 \usepackage{algpseudocode}
-\renewcommand{\algorithmicrequire}{\textbf{Input:}}  % Use Input in the format of Algorithm
-\renewcommand{\algorithmicensure}{\textbf{Output:}} % Use Output in the format of Algorithm 
-%***************************************************************************************************
+
+\floatname{algorithm}{算法}
+\renewcommand{\algorithmicrequire}{\textbf{输入:}}
+\renewcommand{\algorithmicensure}{\textbf{输出:}}
+
+
 
 \usepackage{titlesec}  % 自定义多级标题格式的宏包
 
@@ -57,7 +69,7 @@
 
 \usepackage{setspace}  % 设置行间距
 \usepackage{geometry}  % 设置一些页面格式，还没开发安全
-\geometry{a4paper,left=3.0cm,right=3.0cm,top=2.25cm,bottom=2.0cm}
+\geometry{a4paper,left=2.0cm,right=2.0cm,top=2.25cm,bottom=2.0cm}
 
 % 正文字体的设置
 \PassOptionsToPackage{no-math}{fontspec}
@@ -81,7 +93,7 @@ inner sep=20pt, style=rounded corners, drop shadow={fill=black,
 	\begin{center}
 		\begin{tikzpicture}
 			\node [abstractbox, #1] (box)
-			{\begin{minipage}{0.88\linewidth}
+			{\begin{minipage}{0.82\linewidth}
 					\setlength{\parindent}{2mm}
 					\small #2
 			\end{minipage}};
@@ -113,8 +125,13 @@ inner sep=20pt, style=rounded corners, drop shadow={fill=black,
 	%		\end{center}%
 %	}
 		
-		
-		
-		
-		
+\makeatletter
+\newenvironment{tablehere}
+{\def\@captype{table}}
+{}
+
+\newenvironment{figurehere}
+{\def\@captype{figure}}
+{}
+\makeatother
 		
