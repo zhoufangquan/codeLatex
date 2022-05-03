@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.10.27)  27 APR 2022 20:02
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.10.27)  3 MAY 2022 18:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1004,25 +1004,25 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 27--27
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 27--27
+Underfull \hbox (badness 10000) in paragraph at lines 25--25
 
  []
 
 
 LaTeX Font Warning: Font shape `OMX/cmex/m/n' in size <10.53937> not available
-(Font)              size <10.95> substituted on input line 27.
+(Font)              size <10.95> substituted on input line 25.
 
 
 LaTeX Font Warning: Font shape `TU/FandolSong-Regular(0)/b/it' undefined
 (Font)              using `TU/FandolSong-Regular(0)/b/n' instead on input line 
-35.
+33.
 
-[1
+(./report.bbl
+Underfull \hbox (badness 10000) in paragraph at lines 25--27
+[]\TU/lmr/m/n/10.53937 C. Veronesi, “Falsifications and scientific
+ []
+
+) [1
 
 
 
@@ -1039,11 +1039,11 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 22646 strings out of 476919
- 517323 string characters out of 5825423
- 900489 words of memory out of 5000000
- 42208 multiletter control sequences out of 15000+600000
- 408634 words of font info for 70 fonts, out of 8000000 for 9000
+ 22658 strings out of 476919
+ 516987 string characters out of 5825423
+ 901524 words of memory out of 5000000
+ 42213 multiletter control sequences out of 15000+600000
+ 408658 words of font info for 73 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  120i,7n,121p,443b,773s stack positions out of 5000i,500n,10000p,200000b,80000s
 
