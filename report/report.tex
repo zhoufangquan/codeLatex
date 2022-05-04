@@ -7,123 +7,42 @@
 \include{style}
 
 %opening
-\title{图像语义切割(Image Semantic Segmentation)综述}
+\title{玻普尔证伪主义科学发展模式研究}
 \author{{\small 计算机工程与技术学院 \quad\quad 周方全 | 202121081229 \quad\quad \textbf{邮件地址}：2542154447@qq.com}}
 \date{}
-
 
 
 \begin{document}
 \maketitle  % 生成标题
 
-%\begin{abstractbox}
-%	{\bf 语义切割(Semantic Segmentation)是计算机视觉中十分重要的领域，它是指像素级别的识别图像，即
-%		标注出每个像素所属的对象类别。此项技术目前广泛应用于医学图像与无人驾驶等领域。本文主要从语
-%		义切割的基本概念介绍在深度学习引入前后此领域的算法发明与改进，侧重点在深度算法，从原始算法
-%		全卷积网络(FCN)为切入点，引入一些其改进算法包括：Encoder-Decoder结构的U-net，具有更大感受野
-%		的空洞卷积(Dilated Convolution)以及加入条件随机场(CRF)。 \rm} \newline	\newline	
-%	{\bf\emph{ Key words-\ 语义切割; 归一化割; 全卷积网络; 空洞卷积; }\rm}	% 文字直接在创建好的环境中输入就可以了。编译后就可以看到效果。
-%\end{abstractbox}
 \boxabstract{	
-	{   语义切割(Semantic Segmentation)是计算机视觉中十分重要的领域，它是指像素级别的识别图像，即
+	{   英网文摘要语义切割(Semantic Segmentation)是计算机视觉中十分重要的领域，它是指像素级别的识别图像，即
 		标注出每个像素所属的对象类别。此项技术目前广泛应用于医学图像与无人驾驶等领域。本文主要从语
 		义切割的基本概念介绍在深度学习引入前后此领域的算法发明与改进，侧重点在深度算法，从原始算法
 		全卷积网络(FCN)为切入点，引入一些其改进算法包括：Encoder-Decoder结构的U-net，具有更大感受野
-		的空洞卷积(Dilated Convolution)以及加入条件随机场(CRF)。 \rm} \newline	\newline	
-	{   Key words-\ 语义切割; 归一化割; 全卷积网络; 空洞卷积; \rm}
+		的空洞卷积(Dilated Convolution)以及加入条件随机场(CRF)。 \rm} \newline \newline	
+	{   \textbf{关键词}：\ 语义切割; 归一化割; 全卷积网络; 空洞卷积; \rm}
 }
+
 \begin{multicols}{2} 
-\section{Write down the main steps of proving the $\mathcal{NP}$ Complete ness of a problem.}
-
-
-{\large \textbf{证明步骤：}
 	
-	首先，我们需要证明这个问题是$\mathcal{NP}$问题。即，解决这个问题需要指数级的时间复杂度，验证结果则需要多项式级的时间复杂度。
-	
-	其次，我们需要证明这个问题是$\mathcal{NP}-Hard$问题。因为，$\mathcal{NP}-Complete$问题是$\mathcal{NP}$问题和$\mathcal{NP}-hard$问题的交集。
-	
-	最后，我们需要找到一个已经存在的$\mathcal{NP}-Complete$问题，如果能将它在多项式时间内归约到我们所求的问题上，说明我们的问题是$\mathcal{NP}-Complete$。}
+\section{Write down the main steps}
 
+\section{Given a graph.}
 
+\subsection{怎么办}
 
-\section{Given a graph, a dominating set is a subset of vertices such that any vertex not in this set is adjacent to at least one vertex in this set The dominating set problem is to check whether a given graph has a dominating set of size at most k.}
+\section{}
 
-%在图论的数学学科中，图的\textbf{顶点覆盖}（有时是节点覆盖）是一组顶点的集合，使得图的每个边缘至少与集合中的一个顶点相连接。 找到最小顶点覆盖的问题是计算机科学中的经典优化问题，也是NP-hard最优问题近似算法的一个典型例子。
+\section{A graph is a 2 plex.}
 
-%支配集（ Dominating set）：对一个无向图G（V，E），称 D ⊆ V 是图G的一个支配集，当且仅当对任意v∈V，要么v∈D，要么v至少与D中的一个顶点相邻。
+\section{In the multiway cut problem}
 
-%支配集问题（ Dominating-set Problem）：输入一个无向图G和预算b，若G存在支配集D且满足|D|<=b，则输出支配集D，否则输出“不存在满足条件的支配集”。
-\subsection*{\qquad  2.1 Prove that the dominating set problem is in $\mathcal{NP}$.}
-{\large \textbf{证明:}
-	
-	对于一个有V个顶点的图，他有$2^V$个子图。我们要解决支配集问题，要判断所有的$2^V$个子图才能找到这个问题的答案。而对于一个给结果而言，我们只需要判断他是否满足即可，我们首先判断支配集里面的顶点每个都是否相连，然后判断支配集外面的顶点是否和支配集里面的顶点相连。而这个判断过程在多项式时间复杂度内就可以完成。
-	
-	综上，解决这个问题需要指数级的时间复杂度，而验证这个问题则需要多项式时间复杂度，所以他是$\mathcal{NP}$问题。}
-\subsection*{\qquad  2.2 Prove that the dominating set problem is NP hard.}
-{\large \textbf{证明:}
-	
-	已知：顶点覆盖问题$Vertex-cover Problem$是NP-完全问题。
-	
-	对给定的无向图$ G $，作如下处理：
-	对于图G的任意一边$(u, v)$，添加一个点$ w $，使得该边的两个顶点$ u、v $分别与$ w $相邻，得到新的一个无向图$ G' $。
-	
-	\textbf{1.若原无向图$ G $存在一个顶点覆盖$ S $，且$ S $满足$ |S|<= k $，则$ S $也可以作为图$ G' $的一个满足条件的支配集。}原因如下：
-	
-	假设，顶点集$ S $是图$ G $的一个点覆盖，而却不是图$ G' $的一个支配集。那么会存在一个点$ w \in V(G') $，且$ w \notin S$但是$ w $不和$ S $任意一个点有相连边。因为在我们构造的$ G' $中，顶点$ u, v, w $是彼此连通的，因为$ w $ 不在$ S $中，那么顶点$ u, v $一定在$ S $中。但是边$ (u, v) $的两个端点都在$ S $中。显然和假设$ S $是一个点覆盖相矛盾。那么，$ S $ 不是图$ G' $的一个支配集是错误的。所以，无向图$ G $存在一个顶点覆盖$ S $，且$ S $满足$ |S|<= b $，则$ S $也可以作为图$ G' $的一个满足条件的支配集。
-	
-	\textbf{2.若无向图$ G' $存在一个支配集$ D $，且满足$ \left| D \right| \leq k$，则图$ G $存在满足条件的顶点覆盖$ S $}
-	
-	对于图$ G' $中的任意一条边$ (u, v) $，以及它的扩展顶点$ w $。构成一个三元式$ \{u, v, w\} $。
-	
-	若$ w \notin D $， 那么为了满足$ D $是一个支配集，$ u，v $中的只能有一个且一定有一个在$ D $中，那么图$ G' $的支配集$ D $就是图$ G $的顶点覆盖$ S $；
-	
-	若，$ w \in D $，为了满足$ D $是在一个支配集，$ u，v $两个顶点不能在$ D $中。则将$ D $中的顶点$ w $替换成顶点$ u $或$ v $，可以得到原图$ G $的一个顶点覆盖$ S $。}
+\cite{2014Falsifications}
+% 添加参考文献
+\bibliographystyle{IEEEtran}    % 设置文献样式
+\bibliography{paper.bib}    % 设置文献的文件路径
 
-\section{Prove that: if we can check whether a graph has a clique (a complete graph) of size k in polynomial time then we can also find a clique of size k in polynomial time.}
-
-{\large \textbf{证明：}
-	
-	由题意得：设函数$ fun(G, k) $，当图$ G $中有一个存在一个大小为$ k $的团的时候返回$ True $，否则返回$ False $。}
-
-\begin{algorithm}[H]
-	\caption{找到大小为$ K $的团}
-	\KwIn{一张图$ G(V, E) $,团的大小$ k $}
-	\KwOut{团大小为$ k $的顶点集合}
-	\If{$ fun(G, k) \neq True $}
-	{
-		不存在这样的团\;	
-		return None\;	
-	}
-	\For{ 顶点 $ v $ in $ V $ }
-	{
-		// 删除顶点 $ v $ 和其的相邻边\\
-		$ V' = V - \{ v\} $\;
-		$ E' = E - \{(u, v):u \in V\} $\;
-		\If{$ fun(G, k) == True $}
-		{
-			$ V = V' $\;
-			$ E = E' $\;
-		}
-		\If{$ \left| V \right| == k $}
-		{
-			break\;
-		}
-	}
-	return V \;
-\end{algorithm}
-
-{\large 通过上述算法，我们可以得到大小为$ K $的团。因为$ fun(G, k) $是多项式时间的算法。那么得到大小为$ K $的团的算法的复杂度也是多项式时间的。}
-
-
-\newpage
-\section{A graph is called a 2 plex if each vertex in the graph is not adjacent to at most one other verte $ x $. Prove that it is $ \mathcal{NPC}$ to check whether an input graph has a sub graph of at least $ k $ vertices that is a 2 plex.}
-
-
-\newpage
-\section{In the multiway cut problem, we are given a undirected graph $ G=(V,E) $ and some special vertices in $ V $ (called terminals). The problem asks us to delete the minimum number of edges from the graph such that no pair of terminals is connected. Please give a 2-approximation algorithm for this problem.}
-
-
-\newpage
 \end{multicols}
 \end{document}
 	
