@@ -21,8 +21,24 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
+\bibitem{王飞2015波普尔证伪主义科学发展模式的解读}
+王飞, ``波普尔证伪主义科学发展模式的解读,''
+  \emph{普洱学院学报}, no.~04, pp. 21--23, 2015.
+
+\bibitem{波珀1986科学发现的逻辑}
+波珀, \emph{科学发现的逻辑}.\hskip 1em plus 0.5em minus 0.4em\relax
+  科学发现的逻辑, 1986.
+
 \bibitem{2014Falsifications}
 C.~Veronesi, ``Falsifications and scientific progress: Popper as sceptical
   optimist,'' \emph{Lettera Matematica}, vol.~1, no.~4, pp. 179--184, 2014.
+
+\bibitem{1974On}
+P.~Tichy, ``On popper's definitions of verisimilitude,'' \emph{The British
+  Journal for the Philosophy of Science}, vol.~25, no.~2, 1974.
+
+\bibitem{2009Out}
+D.~Miller, ``Out of error: Further essays on critical rationalism,''
+  \emph{Springer Netherlands}, 2009.
 
 \end{thebibliography}
